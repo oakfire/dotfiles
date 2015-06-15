@@ -11,6 +11,14 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
+" tagbar (like taglist, despend ctags)
+Plugin 'majutsushi/tagbar'
+" jade syntax
+Plugin 'digitaltoad/vim-jade'
+" coffee script syntax (despend coffee-script)
+Plugin 'kchmck/vim-coffee-script'
+" signify  (+ - ! on the left pane)
+Plugin 'mhinz/vim-signify'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -43,6 +51,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" for tagbar
+nmap <F8> :TagbarToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Use the Solarized Dark theme
 set background=dark
@@ -123,10 +136,10 @@ set title
 " Show the (partial) command as it’s being typed
 set showcmd
 " Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
+"if exists("&relativenumber")
+"	set relativenumber
+"	au BufReadPost * set relativenumber
+"endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
