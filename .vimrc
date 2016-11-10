@@ -19,6 +19,13 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'kchmck/vim-coffee-script'
 " signify  (+ - ! on the left pane)
 Plugin 'mhinz/vim-signify'
+" rust
+Plugin 'rust-lang/rust.vim'
+" 
+Plugin 'jelera/vim-javascript-syntax'
+
+" html5
+Plugin 'othree/html5.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -106,8 +113,9 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
 set expandtab
+set shiftwidth=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
